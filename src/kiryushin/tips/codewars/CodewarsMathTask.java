@@ -58,6 +58,24 @@ else {
 
           return summ;
      }
+//находит в массиве чисел уникальное число и выводит его
+     public double   findUniq (double ... arr)
+     {
+         double a=arr[0];
+         double  b=0;
+         int a2=0,b2=0;
 
+         for (double c: arr)
+         {
+            if(a!=c) {  b=c; b2++;         }
+            else a2++;
+
+
+         }
+
+if (a2>b2)return b;
+else return a;
+
+     }
 
 }

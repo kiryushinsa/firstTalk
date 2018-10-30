@@ -4,21 +4,25 @@ public class WorkWithArray
 
     WorkWithArray(){array =  new int [1]; }
 
-    WorkWithArray(int i){ array =  new int [i]; }
+    WorkWithArray(int i){ array =  new int [i];  }
 
-    void addArray(int i){ array = new int [i]; }
+    void intialize(){
+        for(int a=0,  b=10;a<array.length;a++,b--){array[a]=b;}
+    }
+
 
     void sort( )
     {
-        for (int a:array)
+        for(int i=0,a;i<=array.length-1;i++)
         {
-          if ( a>array[a+1] ) { int b; b=array[a+1]; array[a+1]=a; a=b;    }
-        }
+            if (i < array.length && array[i] > array[i+1]) { a=array[i]; array[i]=array[i+1]; array[i+1] =a;               }
+    }
+
     }
 
 
     void print (){
         for (int a:array) {
-            System.out.print(a);
+            System.out.println(a);
         }}
 }
