@@ -34,7 +34,7 @@ index=i;
     }
 
     //находит сумму элементов в диапазоне от от а до б
-     public int findSum(int a,int b)
+     public int findSumInDiapazone(int a,int b)
      {int summ=0;
 
      // -1 2 // 0 -1
@@ -77,5 +77,29 @@ if (a2>b2)return b;
 else return a;
 
      }
+
+     public boolean checkCard(String cardnumber)
+     {
+
+        int lenCardNumber = cardnumber.length();
+String cardResult="";
+
+        for(int i=0; i<lenCardNumber; i++)
+        {
+            if(i!=0 && (i%2)!=0) { cardResult = cardResult.concat(String.valueOf(cardnumber.charAt(i)));     }
+            else {
+                cardResult = cardResult.concat(String.valueOf(cardnumber.charAt(i)));
+            }
+
+        }
+
+
+
+
+
+         return true;
+
+     }
+
 
 }
